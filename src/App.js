@@ -14,7 +14,7 @@ function App() {
   const getRepos = async () => {
 
     var myHeaders = new Headers();
-    myHeaders.append("Authorization", "Bearer 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");
+    myHeaders.append("Authorization", `Bearer ${process.env.REACT_APP_API_KEY}`);
 
     var requestOptions = {
       method: 'GET',
